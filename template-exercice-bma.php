@@ -22,26 +22,22 @@
 ?>
 <link rel="icon" type="image/png" href="<?php echo $bma_plugin_url; ?>/images/fav.png">
 
+<link rel="stylesheet" type="text/css" href="<?php echo $bma_plugin_url; ?>/css/style.css">
+<link rel="stylesheet" type="text/css" href="<?php echo $bma_plugin_url; ?>/css/plyr.css">
+<link rel="stylesheet" type="text/css" href="<?php echo $bma_plugin_url; ?>/css/bma-questions.css">
+<link rel="stylesheet" type="text/css" href="<?php echo $bma_plugin_url; ?>/css/bootstrap.min.css">
+
 <link rel="stylesheet" type="text/css" href="<?php echo $bma_plugin_url; ?>/css/justine/style.css">
 <link rel="stylesheet" type="text/css" href="<?php echo $bma_plugin_url; ?>/css/justine/navBar.css">
 <link rel="stylesheet" type="text/css" href="<?php echo $bma_plugin_url; ?>/css/justine/blocs.css">
 <link rel="stylesheet" type="text/css" href="<?php echo $bma_plugin_url; ?>/css/justine/chat.css">
 <link rel="stylesheet" type="text/css" href="<?php echo $bma_plugin_url; ?>/css/justine/reponses.css">
 
-<link rel="stylesheet" type="text/css" href="<?php echo $bma_plugin_url; ?>/css/style.css">
-<link rel="stylesheet" type="text/css" href="<?php echo $bma_plugin_url; ?>/css/plyr.css">
-<link rel="stylesheet" type="text/css" href="<?php echo $bma_plugin_url; ?>/css/bma-questions.css">
-<link rel="stylesheet" type="text/css" href="<?php echo $bma_plugin_url; ?>/css/bootstrap.min.css">
-
 <link href="https://fonts.googleapis.com/css?family=Abel|Bigshot+One|Cuprum|Francois+One|Iceberg|Jomhuria|Kreon|Nova+Slim|Open+Sans+Condensed:300|Ribeye|Stint+Ultra+Condensed|Titillium+Web|Vidaloka|Wellfleet" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 
-<style type="text/css">
-	body{
-		background-color:black !important;
-	}
-</style>
+
 <script type='text/javascript' src='<?php echo $home_url; ?>wp-includes/js/jquery/jquery.js'></script>
 <script type='text/javascript' src='<?php echo $home_url; ?>wp-includes/js/jquery/jquery-migrate.min.js'></script>
 
