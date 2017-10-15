@@ -44,9 +44,44 @@
 <script type="text/javascript" src="<?php echo $bma_plugin_url; ?>/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php echo $bma_plugin_url; ?>/js/bootstrap-datepicker.min.js"></script>
 <script type="text/javascript" src="<?php echo $bma_plugin_url; ?>/locales/bootstrap-datepicker.fr.min.js"></script>
-<script type="text/javascript" src="<?php echo $bma_plugin_url; ?>/js/lib/bootstrap-rating-input.js"></script>
 
 <script type="text/javascript" src="<?php echo $bma_plugin_url; ?>/js/lib/angular.min.js"></script>
+
+
+	<script type="text/javascript" src="<?php echo $bma_plugin_url; ?>/js/lib/angular-animate.min.js"></script>
+    <script type="text/javascript" src="<?php echo $bma_plugin_url; ?>/js/lib/angular-aria.min.js"></script>
+	<script type="text/javascript" src="<?php echo $bma_plugin_url; ?>/js/lib/angular-material.min.js"></script>
+	<script type="text/javascript" src="<?php echo $bma_plugin_url; ?>/js/lib/jk-rating-stars.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="<?php echo $bma_plugin_url; ?>/css/jk-rating-stars.min.css"/>
+    <link rel="stylesheet" href="<?php echo $bma_plugin_url; ?>/css/angular-material.min.css" />
+
+	<style type="text/css">
+		/* fallback */
+		@font-face {
+		  font-family: 'Material Icons';
+		  font-style: normal;
+		  font-weight: 400;
+		  src: url(<?php echo $bma_plugin_url; ?>/fonts/materialicons.woff2) format('woff2');
+		}
+
+		.material-icons {
+		  font-family: 'Material Icons';
+		  font-weight: normal;
+		  font-style: normal;
+		  font-size: 24px;
+		  line-height: 1;
+		  letter-spacing: normal;
+		  text-transform: none;
+		  display: inline-block;
+		  white-space: nowrap;
+		  word-wrap: normal;
+		  direction: ltr;
+		  -webkit-font-feature-settings: 'liga';
+		  -webkit-font-smoothing: antialiased;
+		}
+	</style>
+
+
 <script type="text/javascript" src="<?php echo $bma_plugin_url; ?>/js/directives.js"></script>
 <script type="text/javascript" src="<?php echo $bma_plugin_url; ?>/js/exos/exoApp.js"></script>
 <script type='text/javascript'>
