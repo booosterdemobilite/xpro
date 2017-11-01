@@ -85,8 +85,10 @@
 	<script type="text/javascript" src="<?php echo $bma_plugin_url; ?>/js/lib/vis.js"></script>
   	<link  rel="stylesheet" type="text/css" href="<?php echo $bma_plugin_url; ?>/css/vis-network.min.css" />
 
-<script type="text/javascript" src="<?php echo $bma_plugin_url; ?>/js/directives.js"></script>
+
 <script type="text/javascript" src="<?php echo $bma_plugin_url; ?>/js/exos/exoApp.js"></script>
+<script type="text/javascript" src="<?php echo $bma_plugin_url; ?>/js/directives.js"></script>
+
 <script type='text/javascript'>
 			var HOME_URL = "<?php echo get_home_url(); ?>";
 			var bma_nonce = "<?php echo wp_create_nonce( 'wp_rest' ); ?>";
