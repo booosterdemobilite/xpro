@@ -36,6 +36,11 @@
 <link href="https://fonts.googleapis.com/css?family=Abel|Bigshot+One|Cuprum|Francois+One|Iceberg|Jomhuria|Kreon|Nova+Slim|Open+Sans+Condensed:300|Ribeye|Stint+Ultra+Condensed|Titillium+Web|Vidaloka|Wellfleet" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<script type='text/javascript'>
+    var HOME_URL = '<?php echo $home_url;?>';
+    var BMA_RESOURCE_URL = '<?php echo $bma_plugin_url;?>';
+    var BMA_NONCE = '<?php echo wp_create_nonce( 'wp_rest' );?>';
+</script>
 
 <script type='text/javascript' src='<?php echo $home_url; ?>wp-includes/js/jquery/jquery.js'></script>
 <script type='text/javascript' src='<?php echo $home_url; ?>wp-includes/js/jquery/jquery-migrate.min.js'></script>
@@ -79,6 +84,10 @@
     </style>
 <script type="text/javascript" src="<?php echo $bma_plugin_url; ?>/js/exos/exoApp.js"></script>
 <script type="text/javascript" src="<?php echo $bma_plugin_url; ?>/js/directives.js"></script>
+
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+<script type='text/javascript' src='<?php echo $bma_plugin_url;?>/js/partie2/global-script.js'></script>
 
 <?php
 //add exercices Angular JS controllers
