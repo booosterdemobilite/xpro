@@ -10,51 +10,13 @@
 <!--[if lte IE 7]> <html class="ie-lte7" dir="ltr"> <![endif]-->
 <!--[if lte IE 9]> <html class="ie-lte9" dir="ltr"> <![endif]-->
 <!--[if !IE]><!--> <html dir="ltr">             <!--<![endif]-->
-<?php 
-    $bma_plugin_url = plugins_url('bma-sequence-manager');
-    $home_url = home_url('/');
-?>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>mooc-test</title>
-<!-- write your code here -->
-<style>
-  #animation_container, #_preload_div_ {
-    position:absolute;
-    margin:auto;
-    left:0;right:0;
-    top:0;bottom:0;
-  }
-</style>
-<link rel="icon" type="image/png" href="<?php echo $bma_plugin_url; ?>/images/fav.png">
-
-<link rel="stylesheet" type="text/css" href="<?php echo $bma_plugin_url; ?>/css/style.css">
-<link rel="stylesheet" type="text/css" href="<?php echo $bma_plugin_url; ?>/css/plyr.css">
-<link rel="stylesheet" type="text/css" href="<?php echo $bma_plugin_url; ?>/css/bma-questions.css">
-<link rel="stylesheet" type="text/css" href="<?php echo $bma_plugin_url; ?>/css/bootstrap.min.css">
-
-<link rel="stylesheet" type="text/css" href="<?php echo $bma_plugin_url; ?>/css/justine/style.css">
-<link rel="stylesheet" type="text/css" href="<?php echo $bma_plugin_url; ?>/css/justine/navBar.css">
-<link rel="stylesheet" type="text/css" href="<?php echo $bma_plugin_url; ?>/css/justine/blocs.css">
-<link rel="stylesheet" type="text/css" href="<?php echo $bma_plugin_url; ?>/css/justine/chat.css">
-<link rel="stylesheet" type="text/css" href="<?php echo $bma_plugin_url; ?>/css/justine/reponses.css">
-
-<link href="https://fonts.googleapis.com/css?family=Abel|Bigshot+One|Cuprum|Francois+One|Iceberg|Jomhuria|Kreon|Nova+Slim|Open+Sans+Condensed:300|Ribeye|Stint+Ultra+Condensed|Titillium+Web|Vidaloka|Wellfleet" rel="stylesheet">
-
-<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-<script type='text/javascript'>
-    var HOME_URL = '<?php echo $home_url;?>';
-    var BMA_RESOURCE_URL = '<?php echo $bma_plugin_url;?>';
-    var BMA_NONCE = '<?php echo wp_create_nonce( 'wp_rest' );?>';
-</script>
-
-<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
-<script type='text/javascript' src='<?php echo $bma_plugin_url;?>/js/partie2/global-script.js'></script>
-<!-- write your code here -->
+    <?php  
+        include SO_SEQUENCE_MANAGER__PLUGIN_DIR . "includes/themes/header/header-partie2.php";
+    ?>
 </head>
-<body onload="init();" style="margin:0px;">
+<body ng-app="exerciceApp" onload="init();" style="margin:0px;">
     <?php while ( have_posts() ) : the_post(); ?>
         
         <?php 
@@ -65,5 +27,9 @@
         ?>
         
     <?php endwhile; ?>
+
+    <?php  
+        include SO_SEQUENCE_MANAGER__PLUGIN_DIR . "includes/themes/footer/footer-partie2.php";
+    ?>
 </body>
 </html>
